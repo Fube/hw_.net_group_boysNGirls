@@ -3,5 +3,17 @@
 }
 <div class="text-center">
     <h1 class="display-4">@ViewBag.Message</h1>
+    @* Display every Task in ViewBag.Tasks *@
+    @foreach (var task in ViewBag.Tasks)
+    {
+    <div class="card mb-4">
+        <div class="card-body">
+            <h2 class="card-title">@task.Code</h2>
+            <p class="card-text">@task.Description</p>
+            <p class="card-text">@task.Location</p>
+        </div>
+    </div>
+    }
+
 </div>
 @RenderBody()

@@ -4,7 +4,7 @@ namespace BoysNGirls.Models.Tasks
 {
     public class StudentTaskService : ITaskService
     {
-        public List<Task> GetTasks(int id)
+        public List<Task> GetTasks()
         {
             //Return hardcoded list containing tasks for students
             return new List<Task>
