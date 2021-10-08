@@ -37,5 +37,10 @@ namespace BoysNGirls.Models.Tasks
             };
 
         }
+
+        string ITaskService.GetType()
+        {
+            return "teacher";
+        }
     }
 }
